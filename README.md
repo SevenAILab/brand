@@ -4,6 +4,30 @@
 
 它不是随机起名器，而是一套把品牌命名从「灵感列表」推进到「判断结构」的工作流。
 
+## 开源地址
+
+https://github.com/SevenAILab/brand
+
+## 一句话安装
+
+如果你使用 Claude Code、OpenClaw、Cursor 或其他支持 Skills 的 AI 工具，可以在终端里直接运行：
+
+```bash
+npx -y skills add https://github.com/SevenAILab/brand -g --all
+```
+
+装好之后，对 AI 说这句就能触发：
+
+```text
+用 brand-naming-studio 帮我起一个品牌名。
+```
+
+如果你只想安装到当前项目，可以去掉 `-g`：
+
+```bash
+npx -y skills add https://github.com/SevenAILab/brand --all
+```
+
 ## 它解决什么问题
 
 很多命名工具的问题是，只会一次性生成几十个名字，但不给判断标准。
@@ -50,12 +74,10 @@
 
 ## 使用方式
 
-把本仓库作为一个 skill 文件夹安装到 OpenClaw / Claude Code / 其他支持 skill 的 agent 系统中即可。
-
-核心入口是：
+安装完成后，直接把需求告诉 AI 即可，例如：
 
 ```text
-SKILL.md
+用 brand-naming-studio 帮我给一个 AI 写作小程序起中文名。用户是小红书博主，功能是把语音想法整理成笔记草稿。名字要口语一点，适合在小红书传播。
 ```
 
 如果你想直接阅读方法论，建议顺序是：
@@ -69,4 +91,3 @@ SKILL.md
 ## 作者
 
 Seven AI Lab
-
