@@ -6,14 +6,14 @@
 
 ## 开源地址
 
-https://github.com/SevenAILab/brand
+https://github.com/SevenAILab/brand-naming-studio-skill
 
 ## 一句话安装
 
 如果你使用 Claude Code、OpenClaw、Cursor 或其他支持 Skills 的 AI 工具，可以在终端里直接运行：
 
 ```bash
-npx -y skills add https://github.com/SevenAILab/brand -g --all
+npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill -g --all
 ```
 
 装好之后，对 AI 说这句就能触发：
@@ -25,7 +25,7 @@ npx -y skills add https://github.com/SevenAILab/brand -g --all
 如果你只想安装到当前项目，可以去掉 `-g`：
 
 ```bash
-npx -y skills add https://github.com/SevenAILab/brand --all
+npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill --all
 ```
 
 ## 它解决什么问题
