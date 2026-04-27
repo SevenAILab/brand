@@ -13,7 +13,7 @@ https://github.com/SevenAILab/brand-naming-studio-skill
 如果你使用 Claude Code、OpenClaw、Cursor 或其他支持 Skills 的 AI 工具，可以在终端里直接运行：
 
 ```bash
-npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill -g --all
+npx skills add https://github.com/SevenAILab/brand-naming-studio-skill --skill brand-naming-studio
 ```
 
 装好之后，对 AI 说这句就能触发：
@@ -22,10 +22,10 @@ npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill -g --a
 用 brand-naming-studio 帮我起一个品牌名。
 ```
 
-如果你只想安装到当前项目，可以去掉 `-g`：
+如果你确定希望全局安装，并同步到所有支持的 Agent，可以使用高级安装命令：
 
 ```bash
-npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill --all
+npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill -g --all
 ```
 
 ## 它解决什么问题
