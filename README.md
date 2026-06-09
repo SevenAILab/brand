@@ -40,6 +40,7 @@ npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill -g --a
 - 用「好记、相关、有戏、能用、包容」做 shortlist 评估
 - 同时检查 fatal flaw，提前排除传播、域名、商标、跨文化和 AI 味命名风险
 - 最终交付的不是名字列表，而是一套方便团队做决策的命名判断结构
+- 内置回归清单和输出检查脚本，防止漏掉域名、商标、账号、语义等真实世界风险
 
 ## 适用场景
 
@@ -63,11 +64,16 @@ npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill -g --a
 ```text
 .
 ├── SKILL.md
+├── agents
+│   └── openai.yaml
 ├── assets
 │   └── shortlist-template.md
+├── scripts
+│   └── check_naming_output.py
 └── references
     ├── ai-naming-workflow.md
     ├── fatal-flaws.md
+    ├── gotchas-and-evals.md
     ├── metaphor-mapping.md
     └── naming-standards.md
 ```
@@ -87,6 +93,14 @@ npx -y skills add https://github.com/SevenAILab/brand-naming-studio-skill -g --a
 3. `references/fatal-flaws.md`
 4. `references/metaphor-mapping.md`
 5. `references/ai-naming-workflow.md`
+
+## 验证命令
+
+```bash
+python3 /Users/seven/.codex/skills/.system/skill-creator/scripts/quick_validate.py .
+python3 -m py_compile scripts/check_naming_output.py
+python3 scripts/check_naming_output.py output.md
+```
 
 ## 作者
 

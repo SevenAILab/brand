@@ -1,0 +1,5 @@
+interface:
+  display_name: "Brand Naming Studio"
+  short_description: "品牌命名、评估、重命名与 shortlist 工作室"
+  brand_color: "#0F766E"
+  default_prompt: "Use $brand-naming-studio to create a structured brand naming shortlist with positioning, risks, and recommendations."
